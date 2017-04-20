@@ -1,0 +1,31 @@
+{
+  "name": "tile-cache",
+  "version": "0.0.0",
+  "description": "Client side splippy tile cache",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://furkot.com"
+  },
+  "repository": "pirxpilot/tile-cache",
+  "license": "MIT",
+  "keywords": [
+    "tile-cache",
+    "slippy tiles",
+    "db",
+    "cache"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
