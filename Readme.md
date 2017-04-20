@@ -17,7 +17,17 @@ $ npm install --save tile-cache
 ```js
 var tileCache = require('tile-cache');
 
-tileCache('Rainbow');
+var key = [0, 3, 5]; // x, y, zoom
+var tile; // Blob or ArrayBuffer representing tile
+
+tileCache.putTile(key, tile, function(err) {
+  // tile is now in cache
+});
+
+tileCache.getTile(key, function(err, tile) {
+  // tile retrieved
+});
+
 ```
 
 ## License
