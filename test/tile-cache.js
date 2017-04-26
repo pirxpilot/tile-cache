@@ -5,7 +5,7 @@ describe('tile-cache', function () {
   var tile1 = new Uint8Array([1, 2, 3, 4]).buffer;
   var tile2 = new Uint8Array([4, 3, 2, 1, 0]).buffer;
 
-  before(function(done) {
+  beforeEach(function(done) {
     tileCache.putTile([1, 1, 5], tile1, done);
   });
 
@@ -38,13 +38,23 @@ describe('tile-cache', function () {
     });
   });
 
+  it('must remove previously added tiles', function (done) {
+    tileCache.removeTile([1, 1, 5], function(err) {
+      should.not.exist(err);
+
+      tileCache.getTile([1, 1, 5], function(err, tile) {
+        should.not.exist(tile);
+        done(err);
+      });
+    });
+  });
+
   it('must confirm that the added tile is in cache', function (done) {
     tileCache.checkTile([1, 1, 5], function(err, ok) {
       should.not.exist(err);
       ok.should.be.ok();
       done(err);
     });
-
   });
 
   it('must confirm that the new tile is NOT in cache', function (done) {
@@ -53,6 +63,6 @@ describe('tile-cache', function () {
       ok.should.not.be.ok();
       done(err);
     });
-
   });
+
 });
