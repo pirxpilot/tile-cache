@@ -38,4 +38,21 @@ describe('tile-cache', function () {
     });
   });
 
+  it('must confirm that the added tile is in cache', function (done) {
+    tileCache.checkTile([1, 1, 5], function(err, ok) {
+      should.not.exist(err);
+      ok.should.be.ok();
+      done(err);
+    });
+
+  });
+
+  it('must confirm that the new tile is NOT in cache', function (done) {
+    tileCache.checkTile([7, 1, 5], function(err, ok) {
+      should.not.exist(err);
+      ok.should.not.be.ok();
+      done(err);
+    });
+
+  });
 });
