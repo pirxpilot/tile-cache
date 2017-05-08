@@ -1,4 +1,9 @@
 
+0.3.1 / 2017-05-07
+==================
+
+ * move indexDB interaction to new module: mlasq
+
 0.3.0 / 2017-04-29
 ==================
 
