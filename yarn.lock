@@ -745,6 +745,13 @@ mkdirp@0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mlasq@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/mlasq/-/mlasq-0.1.0.tgz#e868df26b33b63ae380579da52c1b867acf65993"
+  dependencies:
+    run-first-only "^1.0.0"
+    run-waterfall "^1.1.3"
+
 mocha@^3.0.0, mocha@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-3.2.0.tgz#7dc4f45e5088075171a68896814e6ae9eb7a85e3"
