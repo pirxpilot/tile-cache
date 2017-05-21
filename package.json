@@ -16,7 +16,8 @@
     "cache"
   ],
   "dependencies": {
-    "mlasq": "~0"
+    "mlasq": "~0",
+    "ua-query": "^1.1.0"
   },
   "devDependencies": {
     "browserify": "^14.3.0",
