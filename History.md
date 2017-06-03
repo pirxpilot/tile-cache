@@ -1,4 +1,11 @@
 
+1.0.0 / 2017-06-02
+==================
+
+ * update docs
+ * add functionality to drop entire cache
+ * upgrade mlasq to 0.2.0
+
 0.4.1 / 2017-05-21
 ==================
 
