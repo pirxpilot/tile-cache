@@ -745,8 +745,8 @@ mkdirp@0.5.1:
     minimist "0.0.8"
 
 mlasq@~0:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/mlasq/-/mlasq-0.1.2.tgz#d4c2c28617acb145eee1b706a972a203c04b86f8"
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/mlasq/-/mlasq-0.2.0.tgz#58115216f36f35cd44c1eacbf0e2d4857cdc295e"
   dependencies:
     run-first-only "^1.0.0"
     run-waterfall "^1.1.3"
