@@ -9,7 +9,7 @@ describe('tile-cache', function () {
     tileCache.put('tile', [1, 1, 5], tile1, done);
   });
 
-  it('must retrieved stored tiles', function (done) {
+  it('must retrieve stored tiles', function (done) {
     tileCache.get('tile', [1, 1, 5], function(err, tile) {
       should.not.exist(err);
       tile.should.have.property('byteLength', 4);
@@ -19,7 +19,7 @@ describe('tile-cache', function () {
 
   });
 
-  it('must returned empty when not found', function(done) {
+  it('must return empty when not found', function(done) {
     tileCache.get('tile', [1, 2, 5], function(err, tile) {
       should.not.exist(tile);
       done(err);
@@ -62,6 +62,17 @@ describe('tile-cache', function () {
       should.not.exist(err);
       ok.should.not.be.ok();
       done(err);
+    });
+  });
+
+  it('must clear cache on drop', function(done) {
+    tileCache.drop('tile', function(err) {
+      should.not.exist(err);
+
+      tileCache.get('tile', [1, 1, 5], function(err, tile) {
+        should.not.exist(tile);
+        done(err);
+      });
     });
   });
 
