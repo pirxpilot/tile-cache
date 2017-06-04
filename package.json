@@ -1,6 +1,6 @@
 {
   "name": "tile-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Client side splippy tile cache",
   "author": {
     "name": "Damian Krzeminski",

@@ -1,4 +1,9 @@
 
+1.0.1 / 2017-06-03
+==================
+
+ * allow for using indexedDB in standalone iOS/Safari browser
+
 1.0.0 / 2017-06-02
 ==================
 
