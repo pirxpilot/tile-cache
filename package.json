@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "mlasq": "~0",
-    "ua-query": "^1.2.0"
+    "ua-query": "^1.2.1"
   },
   "devDependencies": {
     "browserify": "^14.3.0",
