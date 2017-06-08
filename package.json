@@ -16,8 +16,7 @@
     "cache"
   ],
   "dependencies": {
-    "mlasq": "~0",
-    "ua-query": "^1.2.1"
+    "mlasq": "~0"
   },
   "devDependencies": {
     "browserify": "^14.3.0",
@@ -25,9 +24,6 @@
     "jshint": "^2.9.4",
     "mocha": "^3.2.0",
     "should": "^11.2.1"
-  },
-  "browser": {
-    "./lib/check": "./lib/check-browser"
   },
   "scripts": {
     "test": "make check"
