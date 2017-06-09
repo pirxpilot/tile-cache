@@ -1,4 +1,9 @@
 
+1.1.1 / 2017-06-08
+==================
+
+ * remove support check based on browser version
+
 1.1.0 / 2017-06-08
 ==================
 
