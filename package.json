@@ -19,11 +19,11 @@
     "mlasq": "~0"
   },
   "devDependencies": {
-    "browserify": "^14.3.0",
+    "@pirxpilot/browserify": "^16.3.0",
     "electron-mocha": "^8.0.3",
-    "jshint": "^2.9.4",
+    "jshint": "^2.10.2",
     "mocha": "^6.1.4",
-    "should": "^11.2.1"
+    "should": "^13.2.3"
   },
   "scripts": {
     "test": "make check"
