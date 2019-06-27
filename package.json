@@ -16,7 +16,7 @@
     "cache"
   ],
   "dependencies": {
-    "mlasq": "~0"
+    "mlasq": "~1"
   },
   "devDependencies": {
     "@pirxpilot/browserify": "^16.3.0",

@@ -1182,10 +1182,10 @@ mkdirp@0.5.1, mkdirp@^0.5.0:
   dependencies:
     minimist "0.0.8"
 
-mlasq@~0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/mlasq/-/mlasq-0.2.0.tgz#58115216f36f35cd44c1eacbf0e2d4857cdc295e"
-  integrity sha512-PZk6seYHBIrnzz/xRUhOqSMaPaz0bnO/6897HHRDC1eh9ZDkvIyUGR8QR8gwvgRsE7ThSH5gS8mPCJe8iKynew==
+mlasq@~1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/mlasq/-/mlasq-1.1.0.tgz#66f3aad312e9a2b21f8f18e2bd3829142d2f4382"
+  integrity sha512-yz7Z0Pc1NoagOfppG455uWs3Nu9qRMLhjiR9Yt6JrKl70o7a+fcjHAN7AugfdbRI2zH1Gf8vqAShpZ5ri2rJUw==
   dependencies:
     run-first-only "^1.0.0"
     run-waterfall "^1.1.3"
