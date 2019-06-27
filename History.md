@@ -1,4 +1,13 @@
 
+1.1.3 / 2019-06-27
+==================
+
+ * rewrite in ES6
+ * update mlasq to ~1
+ * update dev dependencies
+ * upgrade mocha and electron-mocha
+ * test on LTS node version only
+
 1.1.2 / 2018-01-06
 ==================
 
