@@ -1,6 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][deps-image]][deps-url]
 
 # tile-cache
 
@@ -57,8 +57,8 @@ MIT © [Damian Krzeminski](https://furkot.com)
 [npm-image]: https://img.shields.io/npm/v/tile-cache.svg
 [npm-url]: https://npmjs.org/package/tile-cache
 
-[travis-url]: https://travis-ci.org/pirxpilot/tile-cache
-[travis-image]: https://img.shields.io/travis/pirxpilot/tile-cache.svg
+[build-image]: https://img.shields.io/travis/pirxpilot/tile-cache.svg
+[build-url]: https://travis-ci.org/pirxpilot/tile-cache
 
-[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/tile-cache.svg
-[gemnasium-url]: https://gemnasium.com/pirxpilot/tile-cache
+[deps-image]: https://img.shields.io/librariesio/release/npm/tile-cache
+[deps-url]: https://libraries.io/npm/tile-cache
