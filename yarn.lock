@@ -1182,13 +1182,10 @@ mkdirp@0.5.1, mkdirp@^0.5.0:
   dependencies:
     minimist "0.0.8"
 
-mlasq@~1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/mlasq/-/mlasq-1.1.0.tgz#66f3aad312e9a2b21f8f18e2bd3829142d2f4382"
-  integrity sha512-yz7Z0Pc1NoagOfppG455uWs3Nu9qRMLhjiR9Yt6JrKl70o7a+fcjHAN7AugfdbRI2zH1Gf8vqAShpZ5ri2rJUw==
-  dependencies:
-    run-first-only "^1.0.0"
-    run-waterfall "^1.1.3"
+mlasq@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/mlasq/-/mlasq-1.3.1.tgz#a678e8fe3d52eec1125b521ebd335fac2b35572a"
+  integrity sha512-avtZOJtSxIdynodEJKJRgLMHQLYlpRxAEYZgcayNlUXT2KLUaE1wPlnIjlYU/SjgHXDek+uPr/K43oFvVa208g==
 
 mocha@^6.1.4:
   version "6.1.4"
@@ -1540,16 +1537,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
-
-run-first-only@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/run-first-only/-/run-first-only-1.0.0.tgz#7f580f7833fda789af5535ec0267604c67ebf127"
-  integrity sha1-f1gPeDP9p4mvVTXsAmdgTGfr8Sc=
-
-run-waterfall@^1.1.3:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/run-waterfall/-/run-waterfall-1.1.6.tgz#3aebfeb60155539bf1ff4a30b66706ae77df9f74"
-  integrity sha512-dApPbpIK0hbFi2zqfJxrsnfmJW2HCQHFrSsmqF3Fp9TKm5WVf++zE6BSw0hPcA7rPapO37h12Swk2E6Va3tF7Q==
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"

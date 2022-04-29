@@ -11,5 +11,5 @@
   "sub": true,
   "undef": true,
   "unused": true,
-  "esversion": 6
+  "esversion": 10
 }
