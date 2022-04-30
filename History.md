@@ -1,4 +1,10 @@
 
+1.1.5 / 2022-04-30
+==================
+
+ * fix `supported` function when promise API is used
+ * fix `check` function when promise API is used
+
 1.1.4 / 2022-04-29
 ==================
 
