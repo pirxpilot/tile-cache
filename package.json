@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://furkot.com"
   },
-  "repository": "pirxpilot/tile-cache",
+  "repository": "github:pirxpilot/tile-cache",
   "license": "MIT",
   "keywords": [
     "tile-cache",
