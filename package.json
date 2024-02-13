@@ -19,11 +19,9 @@
     "mlasq": "^1.3.1"
   },
   "devDependencies": {
-    "@pirxpilot/browserify": "~17",
-    "electron-mocha": "~11",
-    "jshint": "~2",
-    "mocha": "~9",
-    "should": "^13.2.3"
+    "@pirxpilot/jshint": "~3",
+    "fake-indexeddb": "^5.0.2",
+    "should": "~13"
   },
   "scripts": {
     "test": "make check"

@@ -1,15 +1,21 @@
-const supported = require('../').supported;
+require('fake-indexeddb/auto');
+/* global globalThis */
 
-describe('supported', function () {
+globalThis.self = globalThis;
 
-  it('should be supported with callback', function (done) {
+const { describe, it } = require('node:test');
+const { supported } = require('../');
+
+describe('supported', async function () {
+
+  await it('should be supported with callback', function (_, done) {
     supported(function (err, ok) {
       ok.should.be.ok();
       done(err);
     });
   });
 
-  it('should be supported with promise', async function () {
+  await it('should be supported with promise', async function () {
     const ok = await supported();
     ok.should.be.ok();
   });
