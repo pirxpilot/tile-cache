@@ -54,11 +54,11 @@ tileCache.drop('tile', function(err, tile) {
 
 MIT © [Damian Krzeminski](https://furkot.com)
 
-[npm-image]: https://img.shields.io/npm/v/tile-cache.svg
+[npm-image]: https://img.shields.io/npm/v/tile-cache
 [npm-url]: https://npmjs.org/package/tile-cache
 
-[build-image]: https://img.shields.io/travis/pirxpilot/tile-cache.svg
-[build-url]: https://travis-ci.org/pirxpilot/tile-cache
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/tile-cache/check.yaml?branch=main
+[build-url]: https://github.com/pirxpilot/tile-cache/actions/workflows/check.yaml
 
 [deps-image]: https://img.shields.io/librariesio/release/npm/tile-cache
 [deps-url]: https://libraries.io/npm/tile-cache

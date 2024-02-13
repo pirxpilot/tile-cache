@@ -1,8 +1,0 @@
-sudo: false
-language: node_js
-node_js:
-  - "lts/*"
-services:
-  - xvfb
-before_script:
-  - yarn global add electron
