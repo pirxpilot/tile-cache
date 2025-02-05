@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "~1",
-    "fake-indexeddb": "^5.0.2",
+    "fake-indexeddb": "~6",
     "should": "~13"
   },
   "scripts": {
