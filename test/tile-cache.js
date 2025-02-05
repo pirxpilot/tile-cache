@@ -58,5 +58,4 @@ describe('tile-cache', async function () {
     const tile = await tileCache.get('tile', [1, 1, 5]);
     should.not.exist(tile);
   });
-
 });
