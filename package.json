@@ -22,7 +22,7 @@
     "mlasq": "~2"
   },
   "devDependencies": {
-    "@pirxpilot/jshint": "~3",
+    "@biomejs/biome": "~1",
     "fake-indexeddb": "^5.0.2",
     "should": "~13"
   },
