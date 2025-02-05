@@ -24,30 +24,24 @@ The following collections/stores are provided by tile cache:
 `tile-cache` methods take a store name as the first parameter. The examples below us `tile` store.
 
 ```js
-var tileCache = require('tile-cache');
+const tileCache = require('tile-cache');
 
-var key = [0, 3, 5]; // x, y, zoom
-var tile; // Blob or ArrayBuffer representing tile
+const key = [0, 3, 5]; // x, y, zoom
+let tile; // Blob or ArrayBuffer representing tile
 
-tileCache.put('tile', key, tile, function(err) {
-  // tile is now in cache
-});
+await tileCache.put('tile', key, tile);
+// tile is now in cache
 
-tileCache.get('tile', key, function(err, tile) {
-  // tile retrieved
-});
+tile = await tileCache.get('tile', key);
+// tile retrieved
 
-tileCache.check('tile', key, function(err, inCache) {
-  // inCache is truthy is tile was in cache
-});
+const inCache = await tileCache.check('tile', key);
+// inCache is truthy is tile was in cache
 
-tileCache.remove('tile', key, function(err) {
-  // specific tile is removed from cache
-});
+await tileCache.remove('tile', key);
+// specific tile is removed from cache
 
-tileCache.drop('tile', function(err, tile) {
-  // all tiles are removed from cache
-});
+await tileCache.drop('tile');
 ```
 
 ## License
