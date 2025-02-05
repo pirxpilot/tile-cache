@@ -4,7 +4,7 @@ require('fake-indexeddb/auto');
 globalThis.self = globalThis;
 
 const { describe, it, beforeEach, after } = require('node:test');
-const should = require('should');
+const assert = require('node:assert/strict');
 const tileCache = require('../');
 
 describe('tile-cache', async function () {
@@ -21,41 +21,43 @@ describe('tile-cache', async function () {
 
   await it('must retrieve stored tiles', async function () {
     const tile = await tileCache.get('tile', [1, 1, 5]);
-    tile.should.have.property('byteLength', 4);
-    tile.should.eql(tile1);
+    assert.ok(tile, 'should be found');
+    assert.equal(tile.byteLength, 4);
+    assert.deepEqual(tile, tile1);
   });
 
   await it('must return empty when not found', async function () {
     const tile = await tileCache.get('tile', [1, 2, 5]);
-    should.not.exist(tile);
+    assert.ok(!tile, 'should be not be found');
   });
 
   await it('must store new tiles', async function () {
     await tileCache.put('tile', [2, 1, 5], tile2);
     const tile = await tileCache.get('tile', [2, 1, 5]);
-    tile.should.have.property('byteLength', 5);
-    tile.should.eql(tile2);
+    assert.ok(tile, 'should be found');
+    assert.equal(tile.byteLength, 5);
+    assert.deepEqual(tile, tile2);
   });
 
   await it('must remove previously added tiles', async function () {
     await tileCache.remove('tile', [1, 1, 5]);
     const tile = await tileCache.get('tile', [1, 1, 5]);
-    should.not.exist(tile);
+    assert.ok(!tile, 'should be not be found');
   });
 
   await it('must confirm that the added tile is in cache', async function () {
     const ok = await tileCache.check('tile', [1, 1, 5]);
-    ok.should.be.ok();
+    assert.ok(ok);
   });
 
   await it('must confirm that the new tile is NOT in cache', async function () {
     const ok = await tileCache.check('tile', [7, 1, 5]);
-    ok.should.not.be.ok();
+    assert.ok(!ok);
   });
 
   await it('must clear cache on drop', async function () {
     await tileCache.drop('tile');
     const tile = await tileCache.get('tile', [1, 1, 5]);
-    should.not.exist(tile);
+    assert.ok(!tile, 'should be not be found');
   });
 });
