@@ -5,7 +5,7 @@ globalThis.self = globalThis;
 
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
-const { supported } = require('../index.js');
+const { supported } = require('../lib/tile-cache.js');
 
 describe('supported', async () => {
   await it('should be supported with promise', async () => {

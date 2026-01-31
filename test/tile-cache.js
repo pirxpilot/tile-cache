@@ -5,7 +5,7 @@ globalThis.self = globalThis;
 
 const { describe, it, beforeEach, after } = require('node:test');
 const assert = require('node:assert/strict');
-const tileCache = require('../index.js');
+const tileCache = require('../lib/tile-cache.js');
 
 describe('tile-cache', async () => {
   const tile1 = new Uint8Array([1, 2, 3, 4]).buffer;

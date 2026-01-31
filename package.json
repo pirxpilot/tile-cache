@@ -7,6 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://furkot.com"
   },
+  "exports": "./lib/tile-cache.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pirxpilot/tile-cache.git"
@@ -29,7 +30,6 @@
     "test": "make check"
   },
   "files": [
-    "index.js",
     "lib"
   ]
 }
