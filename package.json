@@ -22,7 +22,7 @@
     "mlasq": "~2"
   },
   "devDependencies": {
-    "@biomejs/biome": "~1",
+    "@biomejs/biome": "2.3.13",
     "fake-indexeddb": "~6"
   },
   "scripts": {

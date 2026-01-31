@@ -1,1 +1,1 @@
-module.exports = require('./lib/tile-cache');
+module.exports = require('./lib/tile-cache.js');
