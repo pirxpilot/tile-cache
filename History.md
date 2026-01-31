@@ -1,4 +1,11 @@
 
+3.0.0 / 2026-01-31
+==================
+
+ * transition to ESM format
+ * upgrade `mlasq` to 3.0.0
+ * upgrade `biome` to 2.3.13
+
 2.0.0 / 2025-02-05
 ==================
 
