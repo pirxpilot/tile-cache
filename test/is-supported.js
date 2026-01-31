@@ -1,15 +1,7 @@
-require('fake-indexeddb/auto');
-/* global globalThis */
+import test from 'node:test';
+import { supported } from '../lib/tile-cache.js';
 
-globalThis.self = globalThis;
-
-const { describe, it } = require('node:test');
-const assert = require('node:assert/strict');
-const { supported } = require('../lib/tile-cache.js');
-
-describe('supported', async () => {
-  await it('should be supported with promise', async () => {
-    const ok = await supported();
-    assert.ok(ok);
-  });
+test('should be supported with promise', async t => {
+  const ok = await supported();
+  t.assert.ok(ok);
 });
